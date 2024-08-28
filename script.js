@@ -11,7 +11,7 @@ Ogni membro possiede: Nome, Informazioni e foto.
 MILESTONE 0 DONE
 Crea l'array di oggetti con le informazioni fornite.
 
-MILESTONE 1
+MILESTONE 1 DONE
 Stampa su console il nome, le informazioni e la stringa della foto
 
 MILESTONE 2
@@ -61,14 +61,15 @@ const ourTeam = [
 
 
 // Stampa in console, operazione ripetuta quindi ciclo for
-
+//Stampa in bracket notation
 for (let i = 0; i < ourTeam.length; i++) {
     const teamMember = ourTeam[i];
-    console.table(`name: ${teamMember.name}`);
-    console.table(`info: ${teamMember.info}`);
-    console.table(`photo: ${teamMember.photo}`);
-    console.table(`-------------------------`) //linea di separazione
+    console.log(`Name: ${teamMember['name']}`);
+    console.log(`Info: ${teamMember['info']}`);
+    console.log(`Photo: ${teamMember['photo']}`);
+    console.log('-------------------------'); // linea di separazione
 }
+
 
 
 
