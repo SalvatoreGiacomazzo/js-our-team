@@ -62,8 +62,7 @@ const ourTeam = [
 
 // Stampa in console, operazione ripetuta quindi ciclo for
 //Stampa in bracket notation
-for (let i = 0; i < ourTeam.length; i++) {
-    const teamMember = ourTeam[i];
+for (teamMember of ourTeam) {
     console.log(`Name: ${teamMember['name']}`);
     console.log(`Info: ${teamMember['info']}`);
     console.log(`Photo: ${teamMember['photo']}`);
