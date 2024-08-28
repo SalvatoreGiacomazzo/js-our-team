@@ -8,7 +8,7 @@ Barbara Ramos |	Graphic Designer     |
 /* Utilizzando i dati forniti, crea un array di oggetti per presentare il Team
 Ogni membro possiede: Nome, Informazioni e foto.
 
-MILESTONE 0
+MILESTONE 0 DONE
 Crea l'array di oggetti con le informazioni fornite.
 
 MILESTONE 1
@@ -23,7 +23,7 @@ Trasforma la stringa in una foto effettiva
 BONUS 2
 Creare delle card che contengono i nomi, informazioni,e la foto.
 */
-
+//Creazione dell'array di oggetti
 const ourTeam = [
     {
         name: 'Wayne Barret',
@@ -58,6 +58,17 @@ const ourTeam = [
 ];
 
 
+
+
+// Stampa in console, operazione ripetuta quindi ciclo for
+
+for (let i = 0; i < ourTeam.length; i++) {
+    const teamMember = ourTeam[i];
+    console.table(`name: ${teamMember.name}`);
+    console.table(`info: ${teamMember.info}`);
+    console.table(`photo: ${teamMember.photo}`);
+    console.table(`-------------------------`) //linea di separazione
+}
 
 
 
